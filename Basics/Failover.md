@@ -14,3 +14,12 @@ strategies : active-active, active-passive
 
 Graceful degradation in fault tolerance :
     it is economically suitable to allow only some services to the users when some disaster happens, then to have the complete functionality
+
+Fault tolerance :
+    node level : we can have multiple nodes of the same application, or db in the same availability zone
+
+    availability zone level : we can have our clustor of servers or databases in multiple zones within a colud region
+
+    region : if the entire region is down, we can have our clustor in multiple regions
+
+    cloud provider : if the entire cloud provider like aws is down, we can have our application in multiple cloud providers like azure 
