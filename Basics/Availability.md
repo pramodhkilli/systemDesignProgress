@@ -61,4 +61,3 @@ Redundancy must exist at every layer. A redundant app tier in front of a single 
 Patterns combine into resilient designs. Load balancers with health checks, replicated databases with managed failover, queue-based load leveling, and circuit breakers each address a specific failure mode
 
 Redundancy is not free. Match the investment to the business impact of downtime, not to an aspiration of "as many nines as possible."
-
