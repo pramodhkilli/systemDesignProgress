@@ -1,4 +1,4 @@
-Subnetting :
+# Subnetting
 
 okayy, what is a subnet, and given a network, how can we subnet the network
 

@@ -1,6 +1,6 @@
-question : how a api goes through all the layers in network
+# question : how a api goes through all the layers in network
 
-the 7 layers in osi model are : 
+the 7 layers in osi model are :
     1. Application layer : http, dns
     2. Presentation
     3. session

@@ -1,3 +1,5 @@
+# Availability
+
  Availability measures how often your system is operational and accessible to users. A highly available system continues functioning even when individual components fail.
 
  Availability is not the same as reliability. A system can be highly available (always up) but unreliable (sometimes gives wrong answers). The two properties are related but distinct.

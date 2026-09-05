@@ -1,4 +1,4 @@
-IP:
+# IP
 
 soooooo, like every house in the world which is accessible through post has an address, every device that can connect to the internet has a IP address, but who give it the address, the router
 
