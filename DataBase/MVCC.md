@@ -1,6 +1,6 @@
 # MVCC
 
-mvcc means multi-versin concurrency control,
+mvcc means multi-version concurrency control,
 
 you might think that when a row is updated in postgres, they are changed in the physical location immediately, that makes sense, but what if the row is being read by someone, and they need the old data, so this is very cleverly solved by creating another tuple, and marking the previous one as dead( this is done by two variables called xmax and xmin, they basically tells when this tuple is created and when it got deleted), so the readers will be able to read it, but writer will write it into a new tuple
 
