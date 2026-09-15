@@ -8,7 +8,7 @@ CAP theorem states that, from these 3, we can only choose 2 at a time, all the 3
 
 so, in every system partition tolerance is a must, so we get to the question, that which one should we choose from consistency and availability
 
-lets try to understand what consistency really means, consistency states that we want all our users to see the same data at the same time, so whenever a read request comes, it should be written to all the db instances
+lets try to understand what consistency really means, consistency states that we want all our users to see the same data at the same time, so whenever a write request comes, it should be written to all the db instances
 
 availability states that, when there is a difference in the data in different db instances, should my product show the data, or not
 
