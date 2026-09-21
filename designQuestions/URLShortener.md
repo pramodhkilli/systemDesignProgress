@@ -45,7 +45,7 @@ Deep dives :
         4. counter :
             with a counter we can remove the reads to the db, because everytime a url is created, we can increment our counter, so everytime it is unique, then we kind of do base 62 encoding of this counter and return it, but issue is it becomes predictable which is bad for security, we can also have a bijective function( this is a function that return a hash for a number which is unique to every number )
 
-![alt text](DB/image.png)
+![alt text](DB/URLShortenerHLD.png)
 
 I want my redis to store the key value pair of shortCode to longUrl, and the eviction mechanism should be LRU cache, because this removes the least recently used urls from the cache
 
