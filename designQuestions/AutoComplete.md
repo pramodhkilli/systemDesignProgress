@@ -35,6 +35,7 @@ so the solution is using trie object, the trie node will have children which poi
 
 trie node :
     vector<Trie*> children,
+
     List<String> suggestions
 
 so if i get something like ama, then i will go to a->m->a, in this node there are top k suggestions, i will simply return the list of strings
