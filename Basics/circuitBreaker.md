@@ -42,3 +42,4 @@ once that threshold is hit, the circuit will be open(imagine like an electrical 
                    /           \
                   ↓             ↓
               CLOSED          OPEN
+              
