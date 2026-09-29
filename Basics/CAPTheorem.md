@@ -2,11 +2,11 @@
 
 c : consistency
 a : availability
-c : partition tolerance( do we need partitions in our db structure?? we want all our db instances to be connected with each other, so that we can sync the data, if there is a partition, and we dont fix it, then our two partitions will be completely different from each other)
+c : partition tolerance(in a distributed system having multiple db nodes, we will face partition, i mean there could be some cases where the database nodes may not be able to communicate with each other, so partitions are inevitable)
 
 CAP theorem states that, from these 3, we can only choose 2 at a time, all the 3 is not possible
 
-so, in every system partition tolerance is a must, so we get to the question, that which one should we choose from consistency and availability
+so, in every system partitions are inevitable, so we get to the question, that which one should we choose from consistency and availability
 
 lets try to understand what consistency really means, consistency states that we want all our users to see the same data at the same time, so whenever a write request comes, it should be written to all the db instances
 
