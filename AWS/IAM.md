@@ -17,3 +17,22 @@ IAM Entities :
 1. USER :
 
     as mentioned earlier, user can be a application, long lived program, or even a human like developer, devops, each user has a unique identifier called the ARN(Amazon Resource Name), and we can have user name and password, or if you want to use this in an application, then we can get access key id and secret key as well and each user has certain permissions
+
+2. Policy :
+
+    a. Identity Based policies : Policy is attached with IAM entity(user/group/role)
+
+    basically in a policy, we have the policy language version, and then array of rules, rules contain things like effect(allow/deny), action(s3:getObject-which api or function you want to access for), resource(in a particular service there can be multiple resources, s3 is a service, in s3 we might have different resouces like dev, prod)
+
+    b. Resource Based policies : the policy is attached to the resource
+
+    apart from the effect, action and resource, we have priciple in resource based policies which has information regarding who can access or what users are allowed to access this resource
+
+    Generally the flow goes like this, if a request comes, it checks in the policies if explicit deny is there, if so, that flow will be denied, if there is no explicit deny, then it will check if explicit allow is there, if it is not there, then it will be dropped, if it is there only, then it is allowed
+
+    imagine a situation where for a resource you have both allow and deny policies for a user, this is a conflict, but if we go through the flow, as there is a deny, the flow will be dropped
+
+3. Group :
+
+    group is basically a container for users, lets say you have a policy you want to assign it to a group of people, you can assign it to a group instead, and you can make that user a part of that group, this way you dont have to assign n times if n users are there, make the n users part of that group, and assin this to the group, like backend developers group, or a particular team like finance, devops something like that
+
