@@ -36,3 +36,10 @@ IAM Entities :
 
     group is basically a container for users, lets say you have a policy you want to assign it to a group of people, you can assign it to a group instead, and you can make that user a part of that group, this way you dont have to assign n times if n users are there, make the n users part of that group, and assin this to the group, like backend developers group, or a particular team like finance, devops something like that
 
+4. Role :
+
+    IAM Role provides temporary identity, Instead of storing long-lived AWS Access and Secret keys(which might cause security issues), Users/Services can ASSUME a Role and user its credentials
+
+    eg : you have an intern which has only READ access on S3, and you have a SDE3 which has both read and write access on S3, lets say we need to provide Intern all permissions which SDE3 has for 1 hour, how can we achieve this??? yeah through role
+
+    we create a role called SeniorSDERole, attach all the permission which SeniorSDE should have with this role, maintain the list of identities which can use this role, otherwise anyone can just use this role, 
