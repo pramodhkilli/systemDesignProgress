@@ -22,3 +22,5 @@ whyy three different types to store text values??? even through all of them stor
     the lehman explanation for why this behaviour happens is that there is a initial value a = "hello", both the threads read this and changed this to something else, lets say t1 changed it to "helloworld" and t2 changed it to "hellouniverse", now when they write, the final value depends on which thread wrote it last, so because stringBuilder allows threads to write without any locking mechanism, this is not thread safe
 
 ![alt text](DB/stringVsStringBufferVsStringBuilder.png)
+
+*** when you do something like string c = a + b, this happens at run time, so java internally does something like c = new StringBuilder().append(a).append(b).toString() so the result will be saved in the heap memory, as no literals are used here, no string will be stored in the string constant pool apart from a and b if they are literals

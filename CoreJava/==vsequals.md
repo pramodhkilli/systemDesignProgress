@@ -8,4 +8,3 @@ so each time a string is created with new keyword, new object is created in the 
 
 == : checks if the memory location of two objects is same or not
 .equals() : ideally it should check if the values of the object are identical or not, instead of their addresses, but by default if you create a new class of your own, this will work the same as ==, you have to override it based on your member variables
-
